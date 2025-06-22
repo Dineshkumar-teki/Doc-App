@@ -1,77 +1,61 @@
-# MediCare App - 4-6 Hour Assessment
+# MediCare App
 
-## Live Demo (UI only): https://meds-buddy-check.lovable.app/
-
-## Current State of the codebase
-
-This is a React medication management app with dual user roles (patients/caretakers). Currently features:
-
-- Role-based dashboard system for each user account with runtime switching (for simplcity)
-
-- UI for medication tracking with calendar visualization
-
-- Mock data for streaks, adherence rates, and medication logs
-
-- Photo upload interface for medication proof
-
-- Notification settings UI (non-functional)
-
-- All data is stored in local state (no persistence)
+A React + TypeScript application for medication management, designed for patients and caretakers. This app allows users to track medication intake, manage medication lists, and view basic adherence statistics. Integrated with **Supabase** for authentication and data persistence.
 
 
-## Core Implementation Tasks
+---
 
-### Phase 1 (Required - 4 hours):
-- Supabase authentication setup
-- Basic CRUD for adding medications
-- Basic CRUD for marking medication taken for the day
-- Connect one dashboard to real data
+## ✅ Completed Features
+### Phase 1 (Required)
+- 🔐 **Supabase Auth** for user sign up, login, and logout
+- ⚠️ Proper error handling & loading states
+- ✅ Form validations for user inputs
+- ✅ Connected one Dashboard to live data in Supabase
 
-### Phase 2 (Optional - 2 hours):
-- Caretaker-patient real time updates
-- Basic adherence tracking
+---
 
-### Phase 3 (Bonus):
-- File uploads
+## ⚡️ Technical Stack
+- **React** + **TypeScript**
+- **Supabase** (Authentication, Database, Storage)
+- **Tailwind CSS** (UI Styling)
 
-**Provided:**
-- UI components and styles
+---
 
-## Required Features:
-1. User login/signup with Supabase Auth
-2. Add medications (name, dosage, frequency)
-3. View medication list
-4. Mark medication as taken today
-5. Simple adherence percentage display
+## 📋 Features
+- ✅ User Registration/Login
+- ✅ Strong Typing (no `any` used)
+- ✅ Responsive, Role-Based UI
+- ✅ Proper error and loading state handling
 
-## Technical Requirements:
-- Use provided React + TypeScript template
-- Integrate Supabase for auth and database
-- Use React Query for data fetching
-- Implement error handling
-- Clean, readable code
+---
 
-## Other Requirements:
-- Use Git with meaningful commits
-- Implement proper form validation
-- Handle loading and error states consistently
-- Write at least 2-3 meaningful tests using vitest
-- Include a README with setup instructions
+## 🛠️ Getting Started
+### Prerequisites
+- Node.js v18+
+- Supabase Project (with configured database)
 
-## Technical Challenges:
+### Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Dineshkumar-teki/Doc-App.git
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Create `.env.local`:
+    ```
+    NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+    ```
+4. Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-**Include:**
-- Optimistic updates using react query
-- Proper TypeScript generics usage
+---
 
-## Deployment Bonus:
-Deploy to Vercel/Netlify
-
-## We will evaluate:
-- Code organization and architecture decisions
-- Error handling and edge cases
-- TypeScript usage (proper typing, no `any`)
-- Component composition and reusability
-- State management approach
-- Performance considerations (unnecessary re-renders)
-- Security awareness (input sanitization)
+## 🧪 Testing
+Run the test suite:
+```bash
+npm run test
