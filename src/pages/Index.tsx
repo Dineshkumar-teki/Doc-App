@@ -12,6 +12,7 @@ type UserType = "patient" | "caretaker" | null;
 
 const Index = () => {
   const auth = useAuth();
+  console.log("Auth context:", auth); // 🔐 check auth context
 
   if (!auth || !auth.user) {
     return <Navigate to="/login" replace />;
